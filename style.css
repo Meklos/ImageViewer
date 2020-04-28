@@ -3,7 +3,7 @@ body{
 }
 
 main{
-    height: 600px;
+    height: 650px;
     width: 1450px;
     margin-top: 150px;
     margin-left:auto;
@@ -18,7 +18,7 @@ main{
     box-shadow: 0px 20px 35px 0 rgba(0, 0, 0, .5);
 }
 
-#bt_viever_left, #bt_viever_right{
+#bt_viewer_left, #bt_viewer_right{
     height: 100%;
     width: 100%;
     flex-grow: 1;
@@ -29,35 +29,37 @@ main{
     cursor: pointer;
 }
 
-.bt_viever_left, .bt_viever_right{
+.bt_viewer_left, .bt_viewer_right{
     height: 50px;
     width: 50px;
     opacity: 0.7;
 }
 
-.bt_viever_left{
+.bt_viewer_left{
     transform: rotate(0.5turn);
 }
 
-#bt_viever_left:hover{
+#bt_viewer_left:hover{
     opacity: 0.3;    
 }
 
-#bt_viever_right:hover{
+#bt_viewer_right:hover{
     opacity: 0.3;
 }
 
-#im_viewer{    
+#photo{    
     height: 100%;
-    width: 1300px; 
+    width: 1300px;
+    flex-grow: 1; 
     position: relative;
 }
 
-#im_viewer_descretion{
+#gray-container{
     background-color: black;
     color: white;
     position: absolute;
     bottom: 0px;
+    width: 100%;
     opacity: 0.6;
     height: 155px;
     font-family: 'Lato', sans-serif;
@@ -67,24 +69,22 @@ main{
     position: relative;
 }
 
-p{
-    font-size: 20px;
-    margin: 40px 0px 0px 30px;
-}
-
-h1{
+#photo-title{
     font-size: 28px;
     line-height:5px;
     margin: 30px;   
 }
 
-
-
-
+#photo-description{
+    font-size: 20px;
+    margin: 40px 0px 0px 30px;
+}
 
 .thumbnails{
-    background-color: darksalmon;
-    opacity: 0.6;
-    height: 100px;
-    width: auto;
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
 }
